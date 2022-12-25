@@ -70,8 +70,8 @@ class rateGrabber:
         sleep(.3)
         
         # find the exact XPATH of element containing swap data
-        swapRateElement = self.find_element(By.XPATH, '/html/body/div[1]/'
-            +'div[1]/div[2]/article/div[4]/div[2]/div[1]/div[1]/div')
+        swapRateElement = self.find_element(By.XPATH, '/html/body/div[1]/'+
+                    'div[1]/div[2]/article/div[4]/div[2]/div[1]/div[1]/div')
         
         # parse data out
         swapRate = swapRateElement.text.split()[3]
